@@ -1,0 +1,135 @@
+header {
+    margin-bottom: 1.25rem;
+}
+
+header,
+section.product-intro {
+    background-color: #fff0ed;
+    margin-bottom: 0;
+}
+
+section h1.product-intro__title {
+    font-size: 3.75rem;
+    font-weight: 300;
+}
+
+h1.product-intro__title {
+    width: 22.5rem;
+}
+p.product-intro__description {
+    width: 22.5rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+button {
+    display: block;
+    background-color: #5bacc3;
+    border: none;
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+a.page-nav-button__view-all, a.page-nav-button__shop-now {
+    background-color: #5bacc3;
+    color: #fff;
+    font-size: 1.3125rem;
+    font-weight: 400;
+    padding: 1.25rem;
+    width: 11.25rem;
+    border: none;
+    text-decoration: none;
+}
+
+div.page-nav-button {
+display: flex;
+justify-content: center;
+}
+
+section.product-intro {
+    background-image: url("/assets/images/coffeebeans-hero.png");
+    background-size: 25rem 40rem;
+    background-repeat: no-repeat;
+    background-position: bottom 20% right 10vw;
+    padding-left: 10%;
+    padding-top: 5%;
+    height: 40rem;
+}
+
+/* Our Products section and card styling */
+section.product {
+    background-color: #f7f7f7;
+}
+
+h2.product__heading {
+    text-align: center;
+}
+
+div.product__container--center {
+    text-align: center;
+    margin: auto;
+    height: 80%;
+}
+
+article.product__card {
+    display: inline-block;
+    text-align: center;
+    width: 20.625rem;
+    height: 27.5rem;
+    margin: 1.25rem;
+    padding: 1.25rem;
+    border-radius: 10px;
+    box-shadow:  0 5px 9px -1px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+}
+
+img.product__image {
+    text-align: center;
+}
+
+p.discount-banner__text {
+    width: 90%;
+    background-color: #393939;
+    color: #fff;
+    font-size: 2.8125rem;
+    font-weight: 400;
+    text-align:center;
+    margin: 10rem auto;
+    padding: 2.5rem 0;
+    width: 80vw;
+    max-width: 80rem;
+}
+
+span {
+    font-weight: 700;
+}
+
+img.product__image {
+    height: 17.5rem;
+}
+
+
+/* Footer styling */
+footer {
+    background-color: #fff0ed;
+    text-align: center;
+    padding: 0 10vw;
+}
+
+div.footer-div {
+    display: inline-block;
+    text-align: left;
+    margin: 1.25rem;
+}
+
+h3.footer-div__heading {
+    font-size: 2.0625rem;
+    font-weight: 300;
+    text-align: left;
+    margin: 1.25rem 0;
+}
+
+.footer-div__description {
+    margin: 0;
+}

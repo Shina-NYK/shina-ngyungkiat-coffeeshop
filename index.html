@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/menu.css" />
+    <link rel="stylesheet" href="/css/landing.css" />
+    <title>Coffee Shop - Home</title>
+</head>
+
+<header>
+    <img class= "icon" id="nitro" src="/assets/images/coffee-beans-logo-and-footer.svg" alt="coffee bean logo" />
+    <h2 class="nav-heading">nitro</h2>
+    <nav class="navigation-bar">
+        <ul class="navigation-bar__list">
+            <li class="navigation-bar__item">
+                <a class="navigation-bar__link" id="about" href="/index.html">ABOUT</a>
+            </li>
+            <li class="navigation-bar__item">
+                <a class="navigation-bar__link" id="menu" href="/pages/menu.html">MENU</a>
+            </li>
+            <li class="navigation-bar__item">
+                <a class="navigation-bar__link--blue" id="shop-now" href="/pages/menu.html">SHOP NOW</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<body>  
+    <section class="product-intro">
+        <h1 class="product-intro__title">Nitro Coffee</h1>
+        <p class="product-intro__description">Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
+        
+        <button class="page-nav-button"> 
+            <a class="page-nav-button__shop-now" href="/pages/menu.html">SHOP NOW</a>
+        </button>
+    </section>  
+
+    <section class="product">
+        <h2 class="product__heading">Our Products</h2>
+        <div class="product__container--center">
+            <article class="product__card">
+                <img class="product__image" src="/assets/images/coffeebeans.png" alt="coffee beans" />
+                <h3 class="product__name">Coffee Beans</h3>
+                <p class="product__price">$18.99</p>
+            </article>
+            <article class="product__card">
+                <img class="product__image" src="/assets/images/coldbrew.png" alt="cold brew" />
+                <h3 class="product__name">Cold Brew</h3>
+                <p class="product__price">$4.99</p>
+            </article>
+            <article class="product__card">
+                <img class="product__image" src="/assets/images/inhousebrew.png" alt="in-house brew" />
+                <h3 class="product__name">In-house Brew</h3>
+                <p class="product__price">$2.99</p>
+            </article>
+        </div>
+        <div class="page-nav-button">
+            <button class="page-nav-button">
+                <a class="page-nav-button__view-all" id="view-all" href="/pages/menu.html">VIEW ALL</a>
+            </button>
+        </div>
+    </section>
+
+    <section class="discount-banner">
+        <p class="discount-banner__text">
+            Get 20% off your first order with code: 
+            <span>FirstNitro</span>
+        </p>
+    </section>
+</body>
+
+<footer>
+    <div class="footer-div">
+        <h3 class="footer-div__heading">Address</h3>
+            <p class="footer-div__description">503 Broadway Penthouse</p>
+            <p class="footer-div__description">New York</p>
+    </div>
+    <div class="footer-div">
+        <h3 class="footer-div__heading">Hours</h3>
+            <p class="footer-div__description">
+                <span>Monday - Friday:</span> 9am - 7pm
+            </p>
+            <p class="footer-div__description">
+                <span>Saturday - Sunday:</span> 10am - 5pm
+            </p>
+    </div>
+    <div class="footer-div">
+        <h3 class="footer-div__heading">Social</h3>
+            <a class="footer-div__link" href="https://www.facebook.com">
+                <img class="icon" id="facebook" src="/assets/logos/Facebook-Icon.svg" alt="Facebook">
+            </a>
+            <a class="footer-div__link" href="https://www.yelp.com">
+                <img class="icon" id="yelp" src="/assets/logos/Yelp-Icon.svg" alt="Yelp">
+            </a>
+            <a class="footer-div__link" href="https://www.instagram.com">
+                <img class="icon" id="instagram" src="/assets/logos/Instagram-Icon.svg" alt="Instagram">
+            </a>
+    </div>
+</footer>
+</html>

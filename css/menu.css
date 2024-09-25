@@ -1,0 +1,150 @@
+/*Navigation styling*/
+header{
+    background-color: #fff0ed;
+}
+
+img.icon {
+    width: 3.125rem;
+}
+
+li a {
+    font-size: 1.3125rem;
+    font-weight: 400;
+}
+
+h2.nav-heading, 
+nav.navigation-bar, 
+.navigation-bar__item
+{
+    display: inline-block;
+    padding: 1.25rem;
+    margin: 1.25rem;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+h2.nav-heading {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+ul.navigation-bar__list {
+    margin: 0;
+    padding-left: 0;
+}
+
+li a.navigation-bar__link--blue {
+    color: #5bacc3;
+}
+
+/* Menu navigation styling */
+h1#menu {
+    background-color: #393939;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: lighter;
+    text-align: center;
+    width: 18.75rem;
+    height: 12.5rem;
+    margin: auto;
+}
+
+div.menu-title {
+    background-image: url("/assets/images/coffee-circle.jpg");
+    background-size: 100% cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit:contain;
+    width: 100%;
+    height: 43.75rem;
+}
+
+ul.nav-menu__list {
+    background-color: #393939;
+    text-align: center;
+    font-weight: lighter;
+    width: 100%;
+    padding: 1.25rem;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+li.nav-menu__item {
+    display: inline-block;
+    /* margin: 1.25rem; */
+    /* padding: 1.25rem; */
+    /* border-left: .25rem solid #5bacc3; */
+}
+
+li.nav-menu__item a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a.item-link-heading {
+    display: block;
+    padding-left:1.25rem;
+    border-left: .25rem solid #5bacc3;
+    /* font-size: 1.3125rem; */
+    margin: 0 1.25rem; 
+}
+
+/* Menu item styling */
+section.hot-drinks, section.pastries {
+    background-color: #fff0ed;
+    text-align: center;
+}
+
+section.cold-drinks {
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3.75rem;
+    font-weight: 300;
+    margin: 0 1.25rem;
+    padding: 1.25rem;
+}
+
+h3.product__name {
+    margin: 1.25rem;
+}
+
+article h3.product__name {
+    font-size: 2.0625rem;
+    font-weight: 300;
+}
+
+article {
+    margin: 0 1.25rem;
+    padding: 0 1.25rem;
+}
+
+p {
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+article p {
+    text-align: center;
+}
+
+article p.product__price {
+    color: #5bacc3;
+}
+
+p.product__description--center {
+    margin: 0 25vw;
+    font-style: italic;
+}
+
+p.product__price {
+    margin-top: .625rem;
+}
