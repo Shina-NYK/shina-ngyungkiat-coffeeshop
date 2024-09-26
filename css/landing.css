@@ -48,9 +48,7 @@ div.page-nav-button {
 
 .product-intro {
     display: flex;
-    justify-content: space-between;
-    padding-left: 10%;
-    padding-top: 5%;
+    justify-content: space-around;
 }
 
 .product-intro__container {
@@ -61,8 +59,7 @@ div.page-nav-button {
 }
 
 .product-intro__image {
-    padding-bottom: 5%;
-    padding-right: 15%;
+    padding-bottom: 2.55%;
 }
 
 /* Our Products section and card styling */
@@ -74,26 +71,64 @@ h2.product__heading {
     text-align: center;
 }
 
-div.product__container--center {
-    text-align: center;
-    margin: auto;
-    height: 80%;
+div.product__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
 }
 
 article.product__card {
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 20.625rem;
     height: 27.5rem;
-    margin: 1.25rem;
-    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+    padding: 0;
     border-radius: 10px;
     box-shadow:  0 5px 9px -1px rgba(0, 0, 0, 0.25);
     background-color: #fff;
+    overflow: hidden;
 }
 
 img.product__image {
     text-align: center;
+    object-fit: contain;
+    height: 17.5rem;
+    padding-top: 1.25rem;
+}
+
+h3.product__name {
+    margin: 0;
+}
+
+.product__details-container {
+    display: flex;
+    background-color: #fff0ed;
+    justify-content: space-around;
+    align-items: center;
+    height: 30%;
+    width: 100%;
+}
+
+.product__details{
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.product__quantity {
+    text-align: left;
+    color: #909090;
+}
+
+p.product__price--bold {
+    font-weight: bold;
+    margin: 0;
+}
+
+div.page-nav-button {
+    padding: 1.25rem 0;
 }
 
 p.discount-banner__text {
@@ -113,16 +148,11 @@ span {
     font-weight: 700;
 }
 
-img.product__image {
-    height: 17.5rem;
-}
-
-
 /* Footer styling */
 footer {
+    display: flex;
+    justify-content: space-around;
     background-color: #fff0ed;
-    text-align: center;
-    padding: 0 10vw;
 }
 
 div.footer-div {

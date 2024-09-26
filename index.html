@@ -12,6 +12,7 @@
 
 <body>  
     <header>
+        <!-- Main navigation bar -->
         <a href="/index.html">
             <img class= "icon" id="nitro" src="/assets/images/coffee-beans-logo-and-footer.svg" alt="coffee bean logo" />
         </a>
@@ -44,23 +45,39 @@
         <img class="product-intro__image" src="/assets/images/coffeebeans-hero.png" alt="coffee bean bag">
     </section>  
 
+    <!-- Our Products section -->
     <section class="product">
         <h2 class="product__heading">Our Products</h2>
-        <div class="product__container--center">
+        <div class="product__container">
             <article class="product__card">
                 <img class="product__image" src="/assets/images/coffeebeans.png" alt="coffee beans" />
-                <h3 class="product__name">Coffee Beans</h3>
-                <p class="product__price">$18.99</p>
+                <div class="product__details-container">    
+                    <article class="product__details">
+                        <h3 class="product__name">Coffee Beans</h3>
+                        <p class="product__quantity">Pack of 3</p>
+                    </article>
+                    <p class="product__price product__price--bold">$19</p>
+                </div>
             </article>
             <article class="product__card">
                 <img class="product__image" src="/assets/images/coldbrew.png" alt="cold brew" />
-                <h3 class="product__name">Cold Brew</h3>
-                <p class="product__price">$4.99</p>
+                <div class="product__details-container">    
+                    <article class="product__details">
+                        <h3 class="product__name">Cold Brew</h3>
+                        <p class="product__quantity">1 can</p>
+                    </article>
+                    <p class="product__price product__price--bold">$5</p>
+                </div>
             </article>
             <article class="product__card">
                 <img class="product__image" src="/assets/images/inhousebrew.png" alt="in-house brew" />
-                <h3 class="product__name">In-house Brew</h3>
-                <p class="product__price">$2.99</p>
+                <div class="product__details-container">    
+                    <article class="product__details">
+                        <h3 class="product__name">In-house Brew</h3>
+                        <p class="product__quantity">1 cup</p>
+                    </article>
+                    <p class="product__price product__price--bold">$3</p>
+                </div>
             </article>
         </div>
         <div class="page-nav-button">
