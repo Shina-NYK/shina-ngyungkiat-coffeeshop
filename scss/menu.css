@@ -1,0 +1,137 @@
+/*Main avigation styling*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff0ed;
+  padding: 1.25rem;
+}
+
+img.icon {
+  width: 3.125rem;
+}
+
+h2.nav-heading {
+  margin: 0;
+  padding: 0;
+}
+
+ul.nav-bar__list {
+  display: flex;
+}
+
+li a {
+  font-size: 1.3125rem;
+  font-weight: 400;
+}
+
+a.nav-heading--black,
+.nav-bar__link--black {
+  color: #000;
+  padding: 0 1.25rem;
+}
+
+a.nav-bar__link--blue {
+  color: #5bacc3;
+  /* padding-right: 1.25rem; */
+}
+
+/* Menu navigation styling */
+div.menu-title {
+  display: flex;
+  background-image: url("/assets/images/coffee-circle.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 43.75rem;
+}
+
+h1#menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #393939;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: lighter;
+  text-align: center;
+  width: 18.75rem;
+  height: 12.5rem;
+  margin: auto;
+}
+
+ul.nav-menu__list {
+  background-color: #393939;
+  text-align: center;
+  font-weight: lighter;
+  width: 100%;
+  padding: 1.25rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+li.nav-menu__item {
+  display: inline-block;
+}
+
+li.nav-menu__item a {
+  color: #fff;
+}
+
+a.item-link-heading {
+  display: block;
+  padding-left: 1.25rem;
+  border-left: 0.25rem solid #5bacc3;
+  margin: 0 1.25rem;
+}
+
+/* Menu item styling */
+section.hot-drinks, section.pastries {
+  background-color: #fff0ed;
+  text-align: center;
+}
+
+section.cold-drinks {
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3.75rem;
+  font-weight: 300;
+  margin: 0 1.25rem;
+  padding: 1.25rem;
+}
+
+h3.product__name {
+  margin: 1.25rem;
+}
+
+article h3.product__name {
+  font-size: 2.0625rem;
+  font-weight: 300;
+}
+
+article {
+  margin: 0 1.25rem;
+  padding: 0 1.25rem;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+article p {
+  text-align: center;
+}
+
+article p.product__price {
+  color: #5bacc3;
+}
+
+p.product__description--center {
+  margin: 0 25vw;
+  font-style: italic;
+}/*# sourceMappingURL=menu.css.map */
