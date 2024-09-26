@@ -18,20 +18,19 @@ h1.product-intro__title {
 }
 p.product-intro__description {
     width: 22.5rem;
-    margin-bottom: 1.25rem;
     padding-bottom: 1.25rem;
+    margin-top: 1.25rem;
 }
 
 button {
-    display: block;
     background-color: #5bacc3;
     border: none;
-    padding: 1.25rem;
-    margin-top: 1.25rem;
-    margin-bottom: 1.25rem;
+    width: 11.25rem;
 }
 
-a.page-nav-button__view-all, a.page-nav-button__shop-now {
+.page-nav-button__view-all,
+.page-nav-button__shop-now {
+    display: inherit;
     background-color: #5bacc3;
     color: #fff;
     font-size: 1.3125rem;
@@ -43,18 +42,27 @@ a.page-nav-button__view-all, a.page-nav-button__shop-now {
 }
 
 div.page-nav-button {
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
-section.product-intro {
-    background-image: url("/assets/images/coffeebeans-hero.png");
-    background-size: 25rem 40rem;
-    background-repeat: no-repeat;
-    background-position: bottom 20% right 10vw;
+.product-intro {
+    display: flex;
+    justify-content: space-between;
     padding-left: 10%;
     padding-top: 5%;
-    height: 40rem;
+}
+
+.product-intro__container {
+    display: inherit;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 1.25rem;
+}
+
+.product-intro__image {
+    padding-bottom: 5%;
+    padding-right: 15%;
 }
 
 /* Our Products section and card styling */

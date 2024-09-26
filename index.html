@@ -10,32 +10,38 @@
     <title>Coffee Shop - Home</title>
 </head>
 
-<header>
-    <img class= "icon" id="nitro" src="/assets/images/coffee-beans-logo-and-footer.svg" alt="coffee bean logo" />
-    <h2 class="nav-heading">nitro</h2>
-    <nav class="navigation-bar">
-        <ul class="navigation-bar__list">
-            <li class="navigation-bar__item">
-                <a class="navigation-bar__link" id="about" href="/index.html">ABOUT</a>
-            </li>
-            <li class="navigation-bar__item">
-                <a class="navigation-bar__link" id="menu" href="/pages/menu.html">MENU</a>
-            </li>
-            <li class="navigation-bar__item">
-                <a class="navigation-bar__link--blue" id="shop-now" href="/pages/menu.html">SHOP NOW</a>
-            </li>
-        </ul>
-    </nav>
-</header>
-
 <body>  
+    <header>
+        <a href="/index.html">
+            <img class= "icon" id="nitro" src="/assets/images/coffee-beans-logo-and-footer.svg" alt="coffee bean logo" />
+        </a>
+        <h2 class="nav-heading nav-heading--black">
+            <a class="nav-heading--black" href="/index.html">nitro </a>
+        </h2>
+        <nav class="nav-bar">
+            <ul class="nav-bar__list">
+                <li class="nav-bar__item">
+                    <a class="nav-bar__link nav-bar__link--black" id="about" href="/index.html">ABOUT</a>
+                </li>
+                <li class="nav-bar__item">
+                    <a class="nav-bar__link nav-bar__link--black" id="menu" href="/pages/menu.html">MENU</a>
+                </li>
+                <li class="nav-bar__item">
+                    <a class="nav-bar__link nav-bar__link--blue" id="shop-now" href="/pages/menu.html">SHOP NOW</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
     <section class="product-intro">
-        <h1 class="product-intro__title">Nitro Coffee</h1>
-        <p class="product-intro__description">Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
-        
-        <button class="page-nav-button"> 
-            <a class="page-nav-button__shop-now" href="/pages/menu.html">SHOP NOW</a>
-        </button>
+        <div class="product-intro__container">
+            <h1 class="product-intro__title">Nitro Coffee</h1>
+            <p class="product-intro__description">Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea species.</p>
+            <button class="page-nav-button"> 
+                <a class="page-nav-button__shop-now" href="/pages/menu.html">SHOP NOW</a>
+            </button>
+        </div>
+        <img class="product-intro__image" src="/assets/images/coffeebeans-hero.png" alt="coffee bean bag">
     </section>  
 
     <section class="product">
