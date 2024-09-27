@@ -1,5 +1,8 @@
+@use "./partials/global" as *;
+@use "./partials/mixin" as *;
+
 /*Main avigation styling*/
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +28,7 @@ li a {
     font-weight: 400;
 }
 
-a.nav-heading--black, 
+.nav-heading--black, 
 .nav-bar__link--black {
     color: #000;
     padding: 0 1.25rem;
@@ -33,7 +36,7 @@ a.nav-heading--black,
 
 a.nav-bar__link--blue {
     color: #5bacc3;
-    /* padding-right: 1.25rem; */
+    padding-right: 1.25rem;
 }
 
 /* Menu navigation styling */
@@ -43,6 +46,13 @@ div.menu-title {
     background-size: cover;
     background-position: center;
     height: 43.75rem;
+}
+
+.menu-title__offset {
+    @include title-box-offset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 h1#menu {

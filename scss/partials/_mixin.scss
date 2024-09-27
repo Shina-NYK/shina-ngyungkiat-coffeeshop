@@ -1,0 +1,38 @@
+// @mixin icon-dimensions($icon-width) {
+//     height: 2.5rem;
+//     width: $icon-width;
+//     // object-fit: contain;
+// }
+
+// @mixin flex-row {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-around;
+// }
+
+
+/*Landing page styling*/
+@mixin padding-margin-zero {
+    padding: 0;
+    margin: 0;
+}
+
+@mixin nav-button-style {
+    display: inherit;
+    background-color: #5bacc3;
+    color: #fff;
+    font-size: 1.3125rem;
+    font-weight: 400;
+    padding: 1.25rem;
+    width: 11.25rem;
+    border: none;
+}
+
+@mixin title-box-offset {
+    position: relative;
+    border: .3125rem solid #5bacc3;
+    top: -15px;
+    left: -15px;
+    width: 100%;
+    height: 100%;
+}

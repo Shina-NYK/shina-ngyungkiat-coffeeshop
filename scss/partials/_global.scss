@@ -1,3 +1,6 @@
+@use "./variables" as *;
+@use "./mixin" as *;
+
 body {
     font-family: 'Open Sans';
     font-weight: 400;
@@ -13,12 +16,14 @@ nav.nav-bar,
 .nav-bar__item
 {
     display: flex;
-    /* justify-content: center; */
-    /* padding: 1.25rem; */
 }
 
 a {
     text-decoration: none;
+}
+
+h2 {
+    @include padding-margin-zero
 }
 
 

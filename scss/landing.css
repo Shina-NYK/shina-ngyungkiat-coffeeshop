@@ -1,3 +1,29 @@
+/*Landing page styling*/
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav.nav-bar,
+.nav-bar__item {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
 header {
   margin-bottom: 1.25rem;
 }
@@ -30,7 +56,8 @@ button {
 }
 
 .page-nav-button__view-all,
-.page-nav-button__shop-now {
+.page-nav-button__shop-now,
+.page-nav-button__learn-more {
   display: inherit;
   background-color: #5bacc3;
   color: #fff;
@@ -39,7 +66,6 @@ button {
   padding: 1.25rem;
   width: 11.25rem;
   border: none;
-  text-decoration: none;
 }
 
 div.page-nav-button {
@@ -66,6 +92,7 @@ div.page-nav-button {
 /* Our Products section and card styling */
 section.product {
   background-color: #f7f7f7;
+  padding-bottom: 20px;
 }
 
 h2.product__heading {
@@ -101,6 +128,7 @@ img.product__image {
 }
 
 h3.product__name {
+  display: block;
   margin: 0;
 }
 
@@ -111,6 +139,7 @@ h3.product__name {
   align-items: center;
   height: 30%;
   width: 100%;
+  padding: 0 1.25rem;
 }
 
 .product__details {
@@ -133,6 +162,42 @@ div.page-nav-button {
   padding: 1.25rem 0;
 }
 
+/*Statement section styling*/
+section.statement {
+  display: flex;
+  justify-content: space-around;
+}
+
+.statement__paragraph {
+  width: 60%;
+}
+
+.statement__icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 3.125rem;
+}
+
+.statement__container--left {
+  display: block;
+  padding: 1.25rem 0;
+  margin: 1.25rem 0;
+}
+
+.statement__container--right {
+  background-image: url("/assets/images/coldbrewbackground.png");
+  background-repeat: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: 100%;
+  width: 25rem;
+  height: 25rem;
+  margin: 1.25rem;
+  text-align: center;
+}
+
+/* Discount section styling */
 p.discount-banner__text {
   width: 90%;
   background-color: #393939;
