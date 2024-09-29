@@ -29,6 +29,34 @@ h2 {
   margin: 0;
 }
 
+@keyframes background-flash {
+  0% {
+    background-color: #393939;
+  }
+  50% {
+    background-color: #5bacc3;
+  }
+  100% {
+    background-color: #393939;
+  }
+}
+@keyframes hover-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(270deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 /*Main navigation styling*/
 header {
   margin-bottom: 1.25rem;
@@ -56,28 +84,49 @@ p.product-intro__description {
 }
 
 /*Button styling*/
-.button {
+.button__container {
+  color: orange;
+  display: flex;
+  justify-content: left;
+}
+.button__container .button__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #5bacc3;
+  height: -moz-fit-content;
+  height: fit-content;
   opacity: 50%;
-  width: 11.25rem;
-  padding: 1.25rem;
+  color: #fff;
+  margin: 1.25rem 0;
+}
+.button__container .button__link .button {
+  display: block;
+  border: 2px #393939 solid;
+  background-color: transparent;
+  font-size: 1.3125rem;
+  text-wrap: nowrap;
+  text-align: center;
+  max-width: 100%;
+  padding: 20px 40px;
+  color: #fff;
+  position: relative;
+  top: -5px;
+  left: -5px;
+  transition-property: transform;
+  transition-duration: 0.5s;
+}
+.button__container .button__link .button:hover {
+  cursor: pointer;
+}
+.button__container .button__link .button:active {
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
 .button__container--center {
-  display: flex;
   justify-content: center;
-}
-
-.page-nav-button__view-all,
-.page-nav-button__shop-now,
-.page-nav-button__learn-more {
-  background-color: #5bacc3;
-  color: #fff;
-  font-size: 1.3125rem;
-  font-weight: 400;
-  padding: 1.25rem;
-  width: 11.25rem;
-  border: none;
 }
 
 /*Product introduction styling*/
@@ -166,10 +215,6 @@ p.product__price--bold {
   margin: 0;
 }
 
-div.page-nav-button {
-  padding: 1.25rem 0;
-}
-
 /*Statement section styling*/
 .message-section {
   display: flex;
@@ -222,6 +267,15 @@ div.page-nav-button {
 .message--right .image-container .message__image {
   height: 17.5rem;
   padding: 1.25rem;
+  transition-property: transform;
+  transition-duration: 0s;
+}
+.message--right .image-container .message__image:hover {
+  animation-name: hover-spin;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  cursor: pointer;
 }
 
 /*Discount section styling*/
@@ -236,6 +290,11 @@ p.discount-banner__text {
   padding: 2.5rem 0;
   width: 80vw;
   max-width: 80rem;
+  animation-name: background-flash;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 10s;
 }
 
 span {

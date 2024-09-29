@@ -1,0 +1,28 @@
+@keyframes background-flash {
+    0% { background-color: #393939; }
+    50% { background-color: #5bacc3; }
+    100% { background-color: #393939; }
+}
+
+@keyframes hover-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(90deg); }
+    to { transform: rotate(180deg); }
+    to { transform: rotate(270deg); }
+    to { transform: rotate(360deg); }
+}
+
+
+// Button tarnsition code below:
+// transition-property: transform; add in original state
+// transition-duration: 0.5s;
+
+// &:hover {
+//     cursor: pointer;
+// }
+
+// &:active {
+//     position: relative;
+//     top: 0;
+//     left: 0;
+// }
