@@ -151,11 +151,11 @@ h2 {
   font-size: 3.75rem;
   font-weight: 300;
   margin: 0 1.25rem;
-  padding: 1.25rem;
+  padding: 1.25rem 0;
 }
 
 h3.product__name {
-  margin: 1.25rem;
+  margin: 1.25rem 0;
 }
 
 article h3.product__name {
@@ -165,7 +165,6 @@ article h3.product__name {
 
 article {
   margin: 0 1.25rem;
-  padding: 0 1.25rem;
 }
 
 p {
@@ -173,15 +172,18 @@ p {
   font-weight: 400;
 }
 
-article p {
+.menu-item {
   text-align: center;
 }
+.menu-item:last-child {
+  padding-bottom: 1.25rem;
+}
 
-article p.product__price {
+.product__price {
   color: #5bacc3;
 }
 
-p.product__description--center {
+.product__description--center {
   margin: 0 25vw;
   font-style: italic;
 }/*# sourceMappingURL=menu.css.map */

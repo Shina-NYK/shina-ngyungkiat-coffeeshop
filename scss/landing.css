@@ -64,32 +64,6 @@ h2 {
     transform: rotate(360deg);
   }
 }
-/*Main navigation styling*/
-header {
-  margin-bottom: 1.25rem;
-}
-
-header,
-section.product-intro {
-  background-color: #fff0ed;
-  margin-bottom: 0;
-}
-
-section h1.product-intro__title {
-  font-size: 3.75rem;
-  font-weight: 300;
-}
-
-h1.product-intro__title {
-  width: 22.5rem;
-}
-
-p.product-intro__description {
-  width: 22.5rem;
-  padding-bottom: 1.25rem;
-  margin-top: 1.25rem;
-}
-
 /*Button styling*/
 .button__container {
   display: flex;
@@ -135,21 +109,45 @@ p.product-intro__description {
   justify-content: center;
 }
 
+/*Main navigation styling*/
+header {
+  margin-bottom: 1.25rem;
+}
+
+header,
+.product-intro {
+  background-color: #fff0ed;
+  margin-bottom: 0;
+  padding: 1.25rem 0;
+}
+
 /*Product introduction styling*/
+.product-intro__title {
+  font-size: 3.75rem;
+  font-weight: 300;
+  width: 22.5rem;
+}
+
+.product-intro__description {
+  width: 22.5rem;
+  padding: 1.25rem 0;
+}
+
 .product-intro {
   display: flex;
   justify-content: space-around;
+  gap: 1.25rem;
 }
 
 .product-intro__container {
   display: inherit;
   flex-direction: column;
   justify-content: center;
-  padding-right: 1.25rem;
+  padding: 1.25rem;
 }
 
 .product-intro__image {
-  padding-bottom: 2.55%;
+  padding-bottom: 1.25rem;
 }
 
 /* Our Products section and card styling */
@@ -163,10 +161,11 @@ h2.product__heading {
   padding: 1.25rem 0;
 }
 
-div.product__container {
+.product__container {
   display: flex;
   justify-content: space-evenly;
   align-self: center;
+  padding: 1.25rem 0;
 }
 
 article.product__card {
@@ -183,12 +182,12 @@ article.product__card {
   overflow: hidden;
 }
 
-img.product__image {
+.product__image {
   text-align: center;
   -o-object-fit: contain;
      object-fit: contain;
   height: 17.5rem;
-  padding-top: 1.25rem;
+  padding: 1.25rem;
 }
 
 h3.product__name {
@@ -233,6 +232,7 @@ p.product__price--bold {
 .message-section .message--left {
   display: block;
   width: 35rem;
+  margin: 1.25rem;
 }
 .message-section .message--left .left-content {
   text-align: left;

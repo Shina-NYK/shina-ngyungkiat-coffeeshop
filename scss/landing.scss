@@ -3,31 +3,6 @@
 @use "./partials/variables" as *;
 @use "./partials/keyframes" as *;
 
-/*Main navigation styling*/
-header {
-    margin-bottom: 1.25rem;
-}
-
-header,
-section.product-intro {
-    background-color: #fff0ed;
-    margin-bottom: 0;
-}
-
-section h1.product-intro__title {
-    font-size: 3.75rem;
-    font-weight: 300;
-}
-
-h1.product-intro__title {
-    width: 22.5rem;
-}
-p.product-intro__description {
-    width: 22.5rem;
-    padding-bottom: 1.25rem;
-    margin-top: 1.25rem;
-}
-
 /*Button styling*/
 .button__container {
     display: flex;
@@ -77,21 +52,45 @@ p.product-intro__description {
     justify-content: center;
 }
 
+/*Main navigation styling*/
+header {
+    margin-bottom: 1.25rem;
+}
+
+header,
+.product-intro {
+    background-color: #fff0ed;
+    margin-bottom: 0;
+    @include pad1_25rem_top-bottom;
+}
+
 /*Product introduction styling*/
+.product-intro__title {
+    font-size: 3.75rem;
+    font-weight: 300;
+    width: 22.5rem;
+}
+
+.product-intro__description {
+    width: 22.5rem;
+    @include pad1_25rem_top-bottom;
+}
+
 .product-intro {
     display: flex;
     justify-content: space-around;
+    gap: 1.25rem;
 }
 
 .product-intro__container {
     display: inherit;
     flex-direction: column;
     justify-content: center;
-    padding-right: 1.25rem;
+    @include padding1_25rem_all;
 }
 
 .product-intro__image {
-    padding-bottom: 2.55%;
+    padding-bottom: 1.25rem
 }
 
 /* Our Products section and card styling */
@@ -105,10 +104,11 @@ h2.product__heading {
     @include pad1_25rem_top-bottom;
 }
 
-div.product__container {
+.product__container {
     display: flex;
     justify-content: space-evenly;
     align-self: center;
+    @include pad1_25rem_top-bottom;
 }
 
 article.product__card {
@@ -125,11 +125,11 @@ article.product__card {
     overflow: hidden;
 }
 
-img.product__image {
+.product__image {
     text-align: center;
     object-fit: contain;
     height: 17.5rem;
-    padding-top: 1.25rem;
+    @include padding1_25rem_all;
 }
 
 h3.product__name {
@@ -173,7 +173,7 @@ p.product__price--bold {
     .message--left {
         display: block;
         width: 35rem;
-        // @include margin1_25rem_left-right;
+        @include margin1_25rem_all ;
 
         .left-content {
             text-align: left;
@@ -224,7 +224,6 @@ p.product__price--bold {
         } 
     }
 }
-
 
 /*Discount section styling*/
 p.discount-banner__text {

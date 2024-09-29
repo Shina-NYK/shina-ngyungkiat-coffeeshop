@@ -74,7 +74,7 @@ ul.nav-menu__list {
     text-align: center;
     font-weight: lighter;
     width: 100%;
-    padding: 1.25rem;
+    @include padding1_25rem_all;
 }
 
 li {
@@ -93,7 +93,7 @@ a.item-link-heading {
     display: block;
     padding-left:1.25rem;
     border-left: .25rem solid #5bacc3;
-    margin: 0 1.25rem; 
+    @include margin1_25rem_left-right;
 }
 
 /* Menu item styling */
@@ -110,12 +110,12 @@ section.cold-drinks {
 h2 {
     font-size: 3.75rem;
     font-weight: 300;
-    margin: 0 1.25rem;
-    padding: 1.25rem;
+    @include margin1_25rem_left-right;
+    @include pad1_25rem_top-bottom;
 }
 
 h3.product__name {
-    margin: 1.25rem;
+    @include  margin1_25rem_top-bottom;
 }
 
 article h3.product__name {
@@ -124,8 +124,7 @@ article h3.product__name {
 }
 
 article {
-    margin: 0 1.25rem;
-    padding: 0 1.25rem;
+    @include margin1_25rem_left-right;
 }
 
 p {
@@ -133,16 +132,22 @@ p {
     font-weight: 400;
 }
 
-article p {
+.menu-item {
     text-align: center;
+
+    &:last-child {
+        padding-bottom: 1.25rem;
+    }
 }
 
-article p.product__price {
-    color: #5bacc3;
+.product__price {
+    color: #5bacc3;   
 }
 
-p.product__description--center {
+.product__description--center {
     margin: 0 25vw;
     font-style: italic;
 }
+
+
 
