@@ -1,4 +1,6 @@
-/*Landing page styling*/
+/*Landing page mixins*/
+/*Menu page mixins*/
+/*Display properties*/
 body {
   font-family: "Open Sans";
   font-weight: 400;
@@ -17,6 +19,9 @@ nav.nav-bar,
 
 a {
   text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
 }
 
 h2 {
@@ -59,7 +64,7 @@ li a {
 
 a.nav-bar__link--blue {
   color: #5bacc3;
-  padding-right: 1.25rem;
+  padding: 0 1.25rem;
 }
 
 /* Menu navigation styling */

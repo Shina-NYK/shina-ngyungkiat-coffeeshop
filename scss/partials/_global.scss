@@ -20,10 +20,15 @@ nav.nav-bar,
 
 a {
     text-decoration: none;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 h2 {
-    @include padding-margin-zero
+    padding: 0;
+    margin: 0;
 }
 
 

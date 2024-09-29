@@ -1,6 +1,8 @@
 @use "./partials/global" as *;
 @use "./partials/mixin" as *;
+@use "./partials/variables" as *;
 
+/*Main navigation styling*/
 header {
     margin-bottom: 1.25rem;
 }
@@ -25,23 +27,46 @@ p.product-intro__description {
     margin-top: 1.25rem;
 }
 
-button {
+/*Button styling*/
+// LEARN MORE test button
+
+
+.button {
     background-color: #5bacc3;
-    border: none;
+    // border: blue solid;
+    opacity: 50%;
     width: 11.25rem;
+    padding: 1.25rem
 }
 
+.button__container--center {
+    @include flex-center;
+}
+
+//////////////////////////////
 .page-nav-button__view-all,
 .page-nav-button__shop-now,
 .page-nav-button__learn-more {
     @include nav-button-style;
 }
 
-div.page-nav-button {
-    display: flex;
-    justify-content: center;
-}
+// .page-nav-button {
+//     @include flex-center;
+//     border: 2px orange solid;
+//     text-align: center;
+//     position: relative;
+//     z-index: 2;
+//     // width: 11.25rem;
 
+//     .page-nav-button__link {
+//         display: block;
+//         border: black solid;
+//         position: relative;
+//         // top: -10px;
+//     }
+// }
+
+/*Product introduction styling*/
 .product-intro {
     display: flex;
     justify-content: space-around;
@@ -131,44 +156,60 @@ div.page-nav-button {
 }
 
 /*Statement section styling*/
-section.statement {
+.message-section {
     display: flex;
     justify-content: space-around;
-    // align-items: center;
-    // @include flex-row;
-} 
+    min-height: 20vw;
+    gap: 1.25rem;
+    padding: 1.25rem;
 
-.statement__paragraph {
-    width: 60%;
+    .message--left {
+        display: block;
+        width: 40rem;
+        margin: 1.25rem;
+
+        .left-content {
+            text-align: left;
+            margin: 1.25rem;
+        }
+
+        div.left-content--icons {
+            display: flex;
+            justify-content: space-between;
+            
+            .content-icon {
+                width: $icon-width;
+            }
+
+        }
+
+    }
 }
 
-.statement__icon {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 3.125rem;
-    // @extend flex-row;
-    // @include icon-dimensions(3.125rem);
-}
-
-.statement__container--left {
-    display: block;
-    padding: 1.25rem 0;
-    margin: 1.25rem 0;
-}
-
-.statement__container--right {
-    background-image: url("/assets/images/coldbrewbackground.png");
-    background-repeat: contain;
-    object-fit: cover;
-    background-size: 100%;
+.message--right {
+    padding: 0;
     width: 25rem;
-    height: 25rem;
-    margin: 1.25rem;
-    text-align: center;
+    min-width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/assets/images/coldbrewbackground.png");
+    background-size: cover;
+    position: relative;
+    margin: 20px;
+
+    .image-container {
+        @include image-container-offset;
+
+        .message__image {
+            height: 17.5rem;
+            padding: 1.25rem;
+        } 
+    }
 }
 
-/* Discount section styling */
+
+/*Discount section styling*/
 p.discount-banner__text {
     width: 90%;
     background-color: #393939;
