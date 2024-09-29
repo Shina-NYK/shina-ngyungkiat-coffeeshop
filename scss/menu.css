@@ -1,6 +1,7 @@
 /*Landing page mixins*/
 /*Menu page mixins*/
 /*Display properties*/
+/* Positioning*/
 body {
   font-family: "Open Sans";
   font-weight: 400;
@@ -29,7 +30,7 @@ h2 {
   margin: 0;
 }
 
-/*Main avigation styling*/
+/*Main navigation styling*/
 header {
   display: flex;
   justify-content: space-between;
@@ -68,10 +69,10 @@ a.nav-bar__link--blue {
 }
 
 /* Menu navigation styling */
-div.menu-title {
+.menu-title {
   display: flex;
   background-image: url("/assets/images/coffee-circle.jpg");
-  background-size: cover;
+  background-size: 100% cover;
   background-position: center;
   height: 43.75rem;
 }

@@ -1,6 +1,7 @@
 /*Landing page mixins*/
 /*Menu page mixins*/
 /*Display properties*/
+/* Positioning*/
 body {
   font-family: "Open Sans";
   font-weight: 400;
@@ -225,7 +226,7 @@ p.product__price--bold {
 }
 .message-section .message--left {
   display: block;
-  width: 40rem;
+  width: 35rem;
   margin: 1.25rem;
 }
 .message-section .message--left .left-content {
@@ -306,6 +307,7 @@ footer {
   display: flex;
   justify-content: space-around;
   background-color: #fff0ed;
+  position: relative;
 }
 
 div.footer-div {
@@ -323,4 +325,20 @@ h3.footer-div__heading {
 
 .footer-div__description {
   margin: 0;
+}
+
+.footer__icon--left {
+  width: 7.5rem;
+  opacity: 25%;
+  position: absolute;
+  top: 20px;
+  left: -20px;
+}
+
+.footer__icon--right {
+  width: 7.5rem;
+  opacity: 25%;
+  position: absolute;
+  top: 20px;
+  right: -20px;
 }/*# sourceMappingURL=landing.css.map */

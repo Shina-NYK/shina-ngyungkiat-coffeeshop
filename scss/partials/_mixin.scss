@@ -1,6 +1,5 @@
 /*Landing page mixins*/
 @mixin nav-button-style {
-    // display: inherit;
     background-color: #5bacc3;
     color: #fff;
     font-size: 1.3125rem;
@@ -8,8 +7,6 @@
     padding: 1.25rem;
     width: 11.25rem;
     border: none;
-    // position: relative;
-    // top: -10px;
 }
 
 @mixin image-container-offset {
@@ -35,8 +32,15 @@
 }
 
 /*Display properties*/
-
 @mixin flex-center {
     display: flex;
     justify-content: center;
+}
+
+/* Positioning*/
+@mixin icon-position {
+    width: 7.5rem;
+    opacity: 25%;
+    position: absolute;
+    top: 20px;
 }

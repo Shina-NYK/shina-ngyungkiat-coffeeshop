@@ -1,7 +1,7 @@
 @use "./partials/global" as *;
 @use "./partials/mixin" as *;
 
-/*Main avigation styling*/
+/*Main navigation styling*/
 header {
     display: flex;
     justify-content: space-between;
@@ -40,10 +40,10 @@ a.nav-bar__link--blue {
 }
 
 /* Menu navigation styling */
-div.menu-title {
+.menu-title {
     display: flex;
     background-image: url("/assets/images/coffee-circle.jpg");
-    background-size: cover;
+    background-size: 100% cover;
     background-position: center;
     height: 43.75rem;
 }

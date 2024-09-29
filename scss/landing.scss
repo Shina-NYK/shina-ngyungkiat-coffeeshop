@@ -1,7 +1,7 @@
 @use "./partials/global" as *;
 @use "./partials/mixin" as *;
 @use "./partials/variables" as *;
-@use "./partials/animations" as *;
+@use "./partials/keyframes" as *;
 
 /*Main navigation styling*/
 header {
@@ -173,7 +173,7 @@ p.product__price--bold {
 
     .message--left {
         display: block;
-        width: 40rem;
+        width: 35rem;
         margin: 1.25rem;
 
         .left-content {
@@ -255,6 +255,7 @@ footer {
     display: flex;
     justify-content: space-around;
     background-color: #fff0ed;
+    position: relative;
 }
 
 div.footer-div {
@@ -272,4 +273,14 @@ h3.footer-div__heading {
 
 .footer-div__description {
     margin: 0;
+}
+
+.footer__icon--left {
+    @include icon-position;
+    left: -20px;
+}
+
+.footer__icon--right {
+    @include icon-position;
+    right: -20px;
 }

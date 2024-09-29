@@ -11,18 +11,3 @@
     to { transform: rotate(270deg); }
     to { transform: rotate(360deg); }
 }
-
-
-// Button tarnsition code below:
-// transition-property: transform; add in original state
-// transition-duration: 0.5s;
-
-// &:hover {
-//     cursor: pointer;
-// }
-
-// &:active {
-//     position: relative;
-//     top: 0;
-//     left: 0;
-// }
