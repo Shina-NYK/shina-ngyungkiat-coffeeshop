@@ -1,7 +1,13 @@
-/*Landing page mixins*/
-/*Menu page mixins*/
-/*Display properties*/
-/* Positioning*/
+/*Global variables*/
+/*Landing page variables*/
+/*Menu page variables*/
+/*Margin and padding: same value all sides*/
+/*Padding only*/
+/*Margin only*/
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: "Open Sans";
   font-weight: 400;
@@ -48,7 +54,7 @@ h2.nav-heading {
   padding: 0;
 }
 
-ul.nav-bar__list {
+.nav-bar__list {
   display: flex;
 }
 

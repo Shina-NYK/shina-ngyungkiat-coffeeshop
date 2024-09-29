@@ -1,5 +1,6 @@
 @use "./partials/global" as *;
 @use "./partials/mixin" as *;
+@use "./partials/variables" as *;
 
 /*Main navigation styling*/
 header {
@@ -7,7 +8,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #fff0ed;
-    padding: 1.25rem;
+    @include padding1_25rem_all;
 }
 
 img.icon {
@@ -15,11 +16,10 @@ img.icon {
 }
 
 h2.nav-heading {
-    margin: 0;
-    padding: 0;
+   @include margin-padding_zero;
 }
 
-ul.nav-bar__list {
+.nav-bar__list {
     display: flex;
 }
 
@@ -36,7 +36,7 @@ li a {
 
 a.nav-bar__link--blue {
     color: #5bacc3;
-    padding: 0 1.25rem;
+    @include pad1_25rem_left-right;
 }
 
 /* Menu navigation styling */
@@ -45,7 +45,7 @@ a.nav-bar__link--blue {
     background-image: url("/assets/images/coffee-circle.jpg");
     background-size: 100% cover;
     background-position: center;
-    height: 43.75rem;
+    height: $back-img-height_menu;
 }
 
 .menu-title__offset {

@@ -1,6 +1,10 @@
 @use "./variables" as *;
 @use "./mixin" as *;
 
+html {
+    font-size: $rem;
+}
+
 body {
     font-family: 'Open Sans';
     font-weight: 400;

@@ -1,4 +1,4 @@
-/*Landing page mixins*/
+//*Landing page mixins*/
 @mixin nav-button-style {
     background-color: #5bacc3;
     color: #fff;
@@ -21,7 +21,7 @@
     padding: 1.25rem 0;
 }
 
-/*Menu page mixins*/
+//*Menu page mixins*/
 @mixin title-box-offset {
     position: relative;
     border: .3125rem solid #5bacc3;
@@ -31,16 +31,54 @@
     height: 100%;
 }
 
-/*Display properties*/
+//*Display properties*/
 @mixin flex-center {
     display: flex;
     justify-content: center;
 }
 
-/* Positioning*/
+//* Positioning*/
 @mixin icon-position {
     width: 7.5rem;
     opacity: 25%;
     position: absolute;
     top: 20px;
+}
+
+//*Box model*/
+/*Margin and padding: same value all sides*/
+@mixin margin-padding1_25rem_all {
+    margin: 1.25rem;
+    padding: 1.25rem;
+}
+
+@mixin margin-padding_zero {
+    margin: 0;
+    padding: 0;
+}
+
+/*Padding only*/
+@mixin padding1_25rem_all {
+    padding: 1.25rem;
+}
+
+@mixin pad1_25rem_top-bottom {
+    padding: 1.25rem 0;
+}
+
+@mixin pad1_25rem_left-right {
+    padding: 0 1.25rem;
+}
+
+/*Margin only*/
+@mixin margin1_25rem_all {
+    margin: 1.25rem;
+}
+
+@mixin margin1_25rem_top-bottom {
+    margin: 1.25rem 0;
+}
+
+@mixin margin1_25rem_left-right {
+    margin: 0 1.25rem;
 }

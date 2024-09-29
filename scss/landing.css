@@ -1,7 +1,13 @@
-/*Landing page mixins*/
-/*Menu page mixins*/
-/*Display properties*/
-/* Positioning*/
+/*Global variables*/
+/*Landing page variables*/
+/*Menu page variables*/
+/*Margin and padding: same value all sides*/
+/*Padding only*/
+/*Margin only*/
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: "Open Sans";
   font-weight: 400;
@@ -86,7 +92,6 @@ p.product-intro__description {
 
 /*Button styling*/
 .button__container {
-  color: orange;
   display: flex;
   justify-content: left;
 }
@@ -155,6 +160,7 @@ section.product {
 
 h2.product__heading {
   text-align: center;
+  padding: 1.25rem 0;
 }
 
 div.product__container {
@@ -222,16 +228,15 @@ p.product__price--bold {
   justify-content: space-around;
   min-height: 20vw;
   gap: 1.25rem;
-  padding: 1.25rem;
+  padding: 1.25rem 0;
 }
 .message-section .message--left {
   display: block;
   width: 35rem;
-  margin: 1.25rem;
 }
 .message-section .message--left .left-content {
   text-align: left;
-  margin: 1.25rem;
+  margin: 1.25rem 0;
 }
 .message-section .message--left div.left-content--icons {
   display: flex;
